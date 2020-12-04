@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Update Employee </title>
+</head>
+<body>
+<div>
+	<h1>Employee Edit Form</h1>
+	<br/>
+	<form th:object="${employee}" th:action="@{/save_employee}" method="post">
+	<table border="1">
+			<tr>
+				<td>Employee Id</td>
+				<td><input type="text" th:field="*{id}" readonly="readonly"/></td>
+			</tr>
+			<tr>
+				<td>Employee Firstname</td>
+				<td><input type="text" th:field="*{firstname}" /></td>
+			</tr>
+			<tr>
+				<td>Employee Lastname</td>
+				<td><input type="text" th:field="*{lastname}" /></td>
+			</tr>
+			<tr>
+			     <td><button type="submit">Update</button></td>
+			</tr>
+	</table>
+</div>
+
+</body>
+</html>
+
+<br /><br /><br /><br />
+
+<h1><a href="https://www.onlyxcodes.com/2020/07/spring-boot-mvc-crud-example.html">Back to Tutorial</a></h1>

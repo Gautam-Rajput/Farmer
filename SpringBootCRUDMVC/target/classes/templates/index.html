@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Index Page</title>
+</head>
+<body>
+<div>
+	<h2><a href="new_add">Add Employee</a></h2>
+	<br/>
+	<table border="1">
+		<thead>
+			<tr>
+				<td>Employee Id</td>
+				<td>Employee Firstname</td>
+				<td>Employee Lastname</td>
+				<td>Edit</td>
+				<td>Delete</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="employee : ${getAllEmployee}">
+				<td th:text="${employee.id}">ID</td>
+				<td th:text="${employee.firstname}">Firstname</td>
+				<td th:text="${employee.lastname}">Lastname</td>
+				
+				<td><a th:href="@{'/edit/' + ${employee.id}}">Edit</a></td>
+				
+				<td><a th:href="@{'/delete/' + ${employee.id}}">Delete</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</body>
+</html>
+
+<br /><br /><br /><br />
+
+<h1><a href="https://www.onlyxcodes.com/2020/07/spring-boot-mvc-crud-example.html">Back to Tutorial</a></h1>

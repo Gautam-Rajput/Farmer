@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: SpringBootCRUDMVC
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: UNITECH
+Implementation-Vendor-Id: com.onlyxcodes
+Build-Jdk: 1.8.0_20
+Implementation-URL: https://spring.io/projects/spring-boot/SpringBootC
+ RUDMVC
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
